@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-import { COLORS } from "../../constants";
+import { COLORS, GRADIENTS } from "../../constants";
 
 const GlobalStyles = createGlobalStyle`
   *,
@@ -24,12 +24,19 @@ const GlobalStyles = createGlobalStyle`
     --color-primary: hsl(${COLORS.primary});
     --color-secondary: hsl(${COLORS.secondary});
     --color-border: hsl(${COLORS.white} / 0.1);
+    --gradient-logo: ${GRADIENTS.logoWrapper};
+    --gradient-nav: ${GRADIENTS.navWrapper};
   }
 
   body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: var(--color-black);
     color: var(--color-white);
+  }
+
+  a {
+   text-decoration-line: none;
+   color: inherit;
   }
 `;
 
