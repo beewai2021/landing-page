@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import Sidebar from "./components/Sidebar/Sidebar.component";
 import Nav from "./components/Nav/Nav.component";
+import Hero from "./components/Hero/Hero.component";
 
 const App = () => {
   return (
@@ -9,6 +10,9 @@ const App = () => {
       <Sidebar />
       <main>
         <Nav />
+        <SiteContent>
+          <Hero />
+        </SiteContent>
       </main>
     </AppWrapper>
   );
@@ -24,4 +28,8 @@ const AppWrapper = styled.div`
   main {
     flex: 1;
   }
+`;
+
+const SiteContent = styled.div`
+  padding: 0 2.4375rem;
 `;

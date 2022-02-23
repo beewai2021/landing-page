@@ -1,14 +1,15 @@
 import { createGlobalStyle } from "styled-components";
 
-import { COLORS, GRADIENTS } from "../../constants";
+import { COLORS, WEIGHTS, GRADIENTS } from "../../constants";
 
 const GlobalStyles = createGlobalStyle`
   *,
   *:before,
   *:after {
     box-sizing: border-box;
-    line-height: 1.5;
-    font-family: 'Raleway', sans-serif;
+    line-height: 1;
+    font-family: "eurostile", -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: 0.11rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: auto;
   }
@@ -26,10 +27,15 @@ const GlobalStyles = createGlobalStyle`
     --color-border: hsl(${COLORS.white} / 0.1);
     --gradient-logo: ${GRADIENTS.logoWrapper};
     --gradient-nav: ${GRADIENTS.navWrapper};
+    --text-regular: ${WEIGHTS.textRegular};
+    --text-medium: ${WEIGHTS.textMedium};
+    --text-bold: ${WEIGHTS.textBold};
+    --text-heavy: ${WEIGHTS.textHeavy};
+    --display-bold: ${WEIGHTS.displayBold};
+    --display-extra-bold: ${WEIGHTS.displayExtraBold};
   }
 
   body {
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: var(--color-black);
     color: var(--color-white);
   }

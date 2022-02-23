@@ -5,7 +5,7 @@ const Sidebar = () => {
   return (
     <SidebarWrapper>
       <LogoWrapper>LOGO</LogoWrapper>
-      <ol>
+      <ul>
         <li>
           <a href="#">DISCORD</a>
         </li>
@@ -21,7 +21,7 @@ const Sidebar = () => {
         <li>
           <a href="#">GITHUB</a>
         </li>
-      </ol>
+      </ul>
     </SidebarWrapper>
   );
 };
@@ -41,11 +41,17 @@ const SidebarWrapper = styled.div`
   padding-bottom: 3.375rem;
   border-right: 1px solid var(--color-border);
 
-  li {
-    color: var(--color-secondary);
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
 
-    &:hover {
-      color: var(--color-white);
+    li {
+      color: var(--color-secondary);
+
+      &:hover {
+        color: var(--color-white);
+      }
     }
   }
 `;

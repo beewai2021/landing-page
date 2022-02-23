@@ -5,6 +5,15 @@ export const COLORS = {
   secondary: "0deg 0% 51%",
 };
 
+export const WEIGHTS = {
+  textRegular: 400,
+  textMedium: 500,
+  textBold: 700,
+  textHeavy: 800,
+  displayBold: 700,
+  displayExtraBold: 800,
+};
+
 export const GRADIENTS = {
   logoWrapper: `
     linear-gradient(
