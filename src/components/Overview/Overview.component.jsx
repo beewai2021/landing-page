@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+
 import SectionWrapper from "../SectionWrapper/SectionWrapper.component";
 
 const Overview = () => {
@@ -39,7 +40,9 @@ const Overview = () => {
 
 export default Overview;
 
-const OverviewWrapper = styled.div``;
+const OverviewWrapper = styled.div`
+  margin: 0 auto;
+`;
 
 const Headline = styled.h1`
   margin-bottom: 6.5rem;
@@ -58,9 +61,8 @@ const Headline = styled.h1`
 const OverviewGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 13.125rem;
+  column-gap: 9.875rem;
   row-gap: 5.5625rem;
-  margin-bottom: 9.5rem;
 `;
 
 const OverviewItem = styled.div`
@@ -71,7 +73,6 @@ const OverviewItem = styled.div`
 
   h3 {
     margin-bottom: 1.5rem;
-    letter-spacing: 0.09rem;
     font-weight: var(--text-medium);
 
     em {
@@ -81,8 +82,6 @@ const OverviewItem = styled.div`
   }
 
   p {
-    line-height: 1.5;
-    letter-spacing: 0.09rem;
     color: var(--color-secondary);
   }
 `;

@@ -4,6 +4,7 @@ import Sidebar from "./components/Sidebar/Sidebar.component";
 import Nav from "./components/Nav/Nav.component";
 import Hero from "./components/Hero/Hero.component";
 import Overview from "./components/Overview/Overview.component";
+import Swap from "./components/Swap/Swap.component";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <SiteContent>
           <Hero />
           <Overview />
+          <Swap />
         </SiteContent>
       </main>
     </AppWrapper>

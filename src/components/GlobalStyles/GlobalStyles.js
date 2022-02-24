@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     line-height: 1;
     font-family: "eurostile", -apple-system, BlinkMacSystemFont, sans-serif;
-    letter-spacing: 0.11rem;
+    letter-spacing: 0.062rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: auto;
   }
@@ -36,13 +36,21 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-color: var(--color-black);
+    background-color: var(--color-black);    
+    background-image: url('/background-gradient.svg');
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
     color: var(--color-white);
   }
 
+  p {
+    line-height: 1.5;
+  }
+
   a {
-   text-decoration-line: none;
-   color: inherit;
+    text-decoration-line: none;
+    color: inherit;
   }
 `;
 
