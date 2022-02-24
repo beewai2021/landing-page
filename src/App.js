@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Sidebar from "./components/Sidebar/Sidebar.component";
 import Nav from "./components/Nav/Nav.component";
 import Hero from "./components/Hero/Hero.component";
+import Overview from "./components/Overview/Overview.component";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Nav />
         <SiteContent>
           <Hero />
+          <Overview />
         </SiteContent>
       </main>
     </AppWrapper>
