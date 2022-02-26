@@ -4,7 +4,7 @@ import styled from "styled-components";
 const SectionWrapper = ({ title, children }) => {
   return (
     <SectionContainer>
-      <aside>{title}</aside>
+      {title && <aside>{title}</aside>}
       {children}
     </SectionContainer>
   );

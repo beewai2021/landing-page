@@ -3,6 +3,7 @@ export const COLORS = {
   white: "0deg 0% 100%",
   primary: "112deg 100% 50%",
   secondary: "0deg 0% 51%",
+  tertiary: "0deg 0% 22%",
 };
 
 export const WEIGHTS = {

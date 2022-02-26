@@ -1,25 +1,49 @@
 import React from "react";
 import styled from "styled-components";
 
+import UXDLogo from "../../images/UXD.svg";
+import DiscordIcon from "../../images/social-media-icons/Discord.svg";
+import TwittterIcon from "../../images/social-media-icons/Twitter.svg";
+import MediumIcon from "../../images/social-media-icons/Medium.svg";
+import WhitepaperIcon from "../../images/social-media-icons/Whitepaper.svg";
+import GitHubIcon from "../../images/social-media-icons/GitHub.svg";
+
 const Sidebar = () => {
   return (
     <SidebarWrapper>
-      <LogoWrapper>LOGO</LogoWrapper>
+      <LogoWrapper>
+        <img src={UXDLogo} alt="UXD Logo" />
+      </LogoWrapper>
       <ul>
         <li>
-          <a href="#">DISCORD</a>
+          <a href="#">
+            <img src={DiscordIcon} alt="Discord icon" />
+            <span>DISCORD</span>
+          </a>
         </li>
         <li>
-          <a href="#">TWITTER</a>
+          <a href="#">
+            <img src={TwittterIcon} alt="Discord icon" />
+            <span>TWITTER</span>
+          </a>
         </li>
         <li>
-          <a href="#">MEDIUM</a>
+          <a href="#">
+            <img src={MediumIcon} alt="Discord icon" />
+            <span>MEDIUM</span>
+          </a>
         </li>
         <li>
-          <a href="#">WHITEPAPER</a>
+          <a href="#">
+            <img src={WhitepaperIcon} alt="Discord icon" />
+            <span>WHITEPAPER</span>
+          </a>
         </li>
         <li>
-          <a href="#">GITHUB</a>
+          <a href="#">
+            <img src={GitHubIcon} alt="Discord icon" />
+            <span>GITHUB</span>
+          </a>
         </li>
       </ul>
     </SidebarWrapper>
@@ -37,20 +61,30 @@ const SidebarWrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 9.9375rem;
   padding-bottom: 3.375rem;
   border-right: 1px solid var(--color-border);
 
   ul {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2.5rem;
 
     li {
-      color: var(--color-secondary);
+      position: relative;
 
-      &:hover {
-        color: var(--color-white);
+      a {
+        img {
+          display: block;
+        }
+
+        span {
+          position: absolute;
+          top: 0;
+          left: calc(100% + 18px);
+          pointer-events: none;
+          visibility: hidden;
+        }
       }
     }
   }
@@ -59,4 +93,9 @@ const SidebarWrapper = styled.div`
 const LogoWrapper = styled.div`
   padding: 3.375rem 3.5625rem;
   background: var(--gradient-logo);
+
+  img {
+    height: 2.8125rem;
+    width: 2.8125rem;
+  }
 `;

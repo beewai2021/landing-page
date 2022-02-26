@@ -48,7 +48,7 @@ const Headline = styled.h1`
   margin-bottom: 6.5rem;
   max-width: 58.25rem;
   line-height: 1.25;
-  font-family: "politica", sans-serif;
+  font-family: var(--font-politica);
   font-weight: var(--display-bold);
   font-size: 4.9375rem;
 

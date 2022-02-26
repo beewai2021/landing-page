@@ -5,6 +5,9 @@ import Nav from "./components/Nav/Nav.component";
 import Hero from "./components/Hero/Hero.component";
 import Overview from "./components/Overview/Overview.component";
 import Swap from "./components/Swap/Swap.component";
+import InsuranceFund from "./components/InsuranceFund/InsuranceFund.component";
+import DeltaNeutral from "./components/DeltaNeutral/DeltaNeutral.component";
+import Solution from "./components/Solution/Solution.component";
 
 const App = () => {
   return (
@@ -16,6 +19,9 @@ const App = () => {
           <Hero />
           <Overview />
           <Swap />
+          <InsuranceFund />
+          <DeltaNeutral />
+          <Solution />
         </SiteContent>
       </main>
     </AppWrapper>

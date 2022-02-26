@@ -10,7 +10,7 @@ const Swap = () => {
         <Showcase>
           <h3>Mint</h3>
           <SwapRow>
-            <div>SOL</div>
+            <Collateral>SOL</Collateral>
             <div>SWAP ICON</div>
             <div>UXD</div>
           </SwapRow>
@@ -24,7 +24,7 @@ const Swap = () => {
           contract.
           <a href="#">Learn More</a>
         </p>
-        <span>MORE COLLATERAL COMING SOON</span>
+        <MoreCollateral>MORE COLLATERAL COMING SOON</MoreCollateral>
       </SwapWrapper>
     </SectionWrapper>
   );
@@ -37,7 +37,6 @@ const SwapWrapper = styled.div`
 
   p {
     max-width: 40.3125rem;
-    margin-bottom: 1.25rem;
     font-size: 1.125rem;
     color: var(--color-secondary);
 
@@ -68,4 +67,41 @@ const SwapRow = styled.div`
   gap: 10.4375rem;
   font-size: 2.1rem;
   font-weight: var(--text-medium);
+`;
+
+const Collateral = styled.div`
+  position: relative;
+
+  &:before {
+    content: "BTC";
+    position: absolute;
+    left: 0;
+    bottom: calc(100% + 3px);
+    width: 130%;
+    background: linear-gradient(to bottom, #323232, var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  &:after {
+    content: "ETH";
+    position: absolute;
+    top: calc(100% + 7px);
+    left: 0;
+    width: 130%;
+    background: linear-gradient(to top, #323232, var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-top: 1px solid var(--color-border);
+  }
+`;
+
+const MoreCollateral = styled.span`
+  display: block;
+  margin-top: 1.25rem;
+  font-size: 0.8125rem;
+  font-weight: var(--text-medium);
+  color: var(--color-tertiary);
 `;

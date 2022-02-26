@@ -20,10 +20,22 @@ const Nav = () => {
       </ul>
       <ul>
         <ListItem webApp>
-          <a href="#">WEB APP</a>
+          <a
+            href="https://app.uxd.fi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            WEB APP
+          </a>
         </ListItem>
         <ListItem>
-          <a href="#">BUY GOV TOKEN</a>
+          <a
+            href="https://jup.ag/swap/USDC-UXP"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            BUY GOV TOKEN
+          </a>
         </ListItem>
       </ul>
     </NavWrapper>

@@ -44,7 +44,7 @@ const Title = styled.h1`
   -webkit-text-stroke-color: var(--color-white);
   color: ${(p) => (p.deltaNeutral ? "var(--color-white)" : "rgba(0, 0, 0, 0)")};
   font-size: 5.8rem;
-  font-family: "politica", sans-serif;
+  font-family: var(--font-politica);
   font-weight: var(--display-extra-bold);
 `;
 
