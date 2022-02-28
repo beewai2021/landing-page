@@ -76,7 +76,7 @@ const Collateral = styled.div`
     content: "BTC";
     position: absolute;
     left: 0;
-    bottom: calc(100% + 3px);
+    bottom: calc(100% + 1px);
     width: 130%;
     background: linear-gradient(to bottom, #323232, var(--color-secondary));
     -webkit-background-clip: text;

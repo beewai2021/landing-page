@@ -8,6 +8,7 @@ import Swap from "./components/Swap/Swap.component";
 import InsuranceFund from "./components/InsuranceFund/InsuranceFund.component";
 import DeltaNeutral from "./components/DeltaNeutral/DeltaNeutral.component";
 import Solution from "./components/Solution/Solution.component";
+import Investors from "./components/Investors/Investors.component";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <InsuranceFund />
           <DeltaNeutral />
           <Solution />
+          <Investors />
         </SiteContent>
       </main>
     </AppWrapper>

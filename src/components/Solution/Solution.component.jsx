@@ -11,6 +11,34 @@ const Solution = () => {
           THE O<em>N</em>E TO S<em>O</em>LVE THE STABLEC<em>O</em>IN TR
           <em>I</em>LLEMA_
         </Headline>
+        <Solutions>
+          <div>
+            <img src="" alt="Decentralised icon" />
+            <h3>DECENTRALISED</h3>
+            <p>
+              UXD Protocol does not interact with any centralized entities or
+              custody user assets. Transactions using UXD will be trustless +
+              censhorship-free.
+            </p>
+          </div>
+          <div>
+            <img src="" alt="Stable icon" />
+            <h3>STABLE</h3>
+            <p>
+              UXD is price stable by construction. Since UXD is 100% backed by
+              crypto assets, users will be able to redeem 1 UXD for 1 USD worth
+              of assets at any time.
+            </p>
+          </div>
+          <div>
+            <img src="" alt="Capital efficient icon" />
+            <h3>CAPITAL EFFICIENT</h3>
+            <p>
+              Users can mint 1 UXD for 1 USD worth of assets. No
+              over-collateralization or "stability fees" are required. 1=1.
+            </p>
+          </div>
+        </Solutions>
       </SolutionWrapper>
     </SectionWrapper>
   );
@@ -31,5 +59,21 @@ const Headline = styled.h1`
   em {
     font: inherit;
     font-style: italic;
+  }
+`;
+
+const Solutions = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4.9375rem;
+  font-size: 1.125rem;
+
+  h3 {
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    max-width: 16.25rem;
+    color: var(--color-secondary);
   }
 `;

@@ -39,8 +39,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-color: var(--color-black);    
-    background-image: url('/background-gradient.svg');
+    background: url('/background-gradient.svg'), var(--color-black);
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover; 

@@ -5,14 +5,20 @@ import UnstyledButton from "../GlobalStyles/UnstyledButton";
 
 const Hero = () => {
   return (
-    <div>
+    <HeroWrapper>
       <TitlesContainer>
         <Title>ALGORITHMIC</Title>
         <Title deltaNeutral>DELTA-NEUTRAL</Title>
         <Title>STABLECOIN</Title>
       </TitlesContainer>
       <UnstyledButton>
-        <EnterAppLink href="#">ENTER APP</EnterAppLink>
+        <EnterAppLink
+          href="https://app.uxd.fi"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ENTER APP
+        </EnterAppLink>
       </UnstyledButton>
       <UXDIcon>UXD ICON</UXDIcon>
       <StatsContainer>
@@ -25,11 +31,13 @@ const Hero = () => {
           <h3>32M</h3>
         </div>
       </StatsContainer>
-    </div>
+    </HeroWrapper>
   );
 };
 
 export default Hero;
+
+const HeroWrapper = styled.div``;
 
 const TitlesContainer = styled.div`
   display: flex;
@@ -39,6 +47,8 @@ const TitlesContainer = styled.div`
 `;
 
 const Title = styled.h1`
+  text-shadow: ${(p) =>
+    p.deltaNeutral ? "0 0 1.125rem hsl(0deg 0% 100% / 0.18)" : "none"};
   line-height: 1;
   -webkit-text-stroke-width: ${(p) => (p.deltaNeutral ? "initial" : "1px")};
   -webkit-text-stroke-color: var(--color-white);
