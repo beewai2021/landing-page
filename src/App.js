@@ -9,6 +9,9 @@ import InsuranceFund from "./components/InsuranceFund/InsuranceFund.component";
 import DeltaNeutral from "./components/DeltaNeutral/DeltaNeutral.component";
 import Solution from "./components/Solution/Solution.component";
 import Investors from "./components/Investors/Investors.component";
+import Roadmap from "./components/Roadmap/Roadmap.component";
+import StartMinting from "./components/StartMinting/StartMinting.component";
+import Footer from "./components/Footer/Footer.component";
 
 const App = () => {
   return (
@@ -24,6 +27,9 @@ const App = () => {
           <DeltaNeutral />
           <Solution />
           <Investors />
+          <Roadmap />
+          <StartMinting />
+          <Footer />
         </SiteContent>
       </main>
     </AppWrapper>
